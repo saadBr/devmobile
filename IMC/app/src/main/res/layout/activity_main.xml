@@ -1,0 +1,142 @@
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:id="@+id/main">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/textTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="IMC For II-Master BDCC 1"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Logo Image -->
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/imc"
+        app:layout_constraintTop_toBottomOf="@id/textTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+    <!-- Poids Row -->
+    <TextView
+        android:id="@+id/textLabelPoids"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Poids"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextPoids"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/textLabelPoids"
+        app:layout_constraintStart_toEndOf="@id/textLabelPoids"
+        app:layout_constraintEnd_toStartOf="@id/textLabelKg"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textLabelKg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Kg"
+        app:layout_constraintTop_toTopOf="@id/editTextPoids"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Taille Row -->
+    <TextView
+        android:id="@+id/textLabelTaille"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Taille"
+        app:layout_constraintTop_toBottomOf="@id/editTextPoids"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <EditText
+        android:id="@+id/editTextTaille"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="0"
+        android:inputType="number"
+        android:gravity="center"
+        app:layout_constraintTop_toTopOf="@id/textLabelTaille"
+        app:layout_constraintStart_toEndOf="@id/textLabelTaille"
+        app:layout_constraintEnd_toStartOf="@id/textLabelCm"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <TextView
+        android:id="@+id/textLabelCm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cm"
+        app:layout_constraintTop_toTopOf="@id/editTextTaille"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Button -->
+    <Button
+        android:id="@+id/btnIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calculer IMC"
+        app:layout_constraintTop_toBottomOf="@id/editTextTaille"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- IMC Result Label -->
+    <TextView
+        android:id="@+id/textLabelIMC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Votre IMC est :"
+        app:layout_constraintTop_toBottomOf="@id/btnIMC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp" />
+
+    <!-- Result Image (visible after calc) -->
+    <ImageView
+        android:id="@+id/imageViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/surpoids"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/textLabelIMC"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="12dp" />
+
+    <!-- Result Category Text -->
+    <TextView
+        android:id="@+id/textViewCategory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sur Poids"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/imageViewResult"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
