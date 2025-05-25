@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Jeu Hazard</string>
+    <string name="text_devinez">Devinez</string>
+    <string name="nombre_plus_grand">Nombre plus grand</string>
+    <string name="nombre_plus_petit">Nombre plus petit</string>
+    <string name="bravo">Bravo!</string>
+    <string name="str_score">Score:</string>
+    <string name="essai_numero">Essai Numéro:</string>
+    <string name="str_nouvel_essai">Nouvel essai?</string>
+</resources>
