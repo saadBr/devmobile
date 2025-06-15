@@ -16,6 +16,14 @@ A Body Mass Index (BMI) calculator that takes the user’s weight and height, co
 
 Each project is self-contained inside its folder with source code and layouts.
 
+### 4. 🌤 Meteo (Jetpack Compose & API)
+A modern weather forecast app built with **Jetpack Compose** and **OpenWeatherMap API**.  
+Features:
+- Dynamic 3-hour forecast for any searched city  
+- Realtime weather icons (via Coil)  
+- Supports both **phones** and **Wear OS smartwatches**  
+- Built using ViewModel, Coroutines, and Material 3
+
 ---
 🧠 Author: Saad EL MABROUK
 📅 Year: 2024-2025

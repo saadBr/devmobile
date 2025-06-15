@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">MeteoApp</string>
+    <string name="search_hint">Entrez le nom de la ville</string>
+    <string name="city_label">Ville :</string>
+    <string name="my_weather">My Weather</string>
+    <string name="min_temp">Min:</string>
+    <string name="max_temp">MAX:</string>
+    <string name="pressure">Pression:</string>
+    <string name="humidity">Humidité:</string>
+    <string name="error_city_not_found">Erreur: Ville non trouvée</string>
+    <string name="error_enter_city">Veuillez entrer le nom d\'une ville</string>
+    <string name="error_processing_data">Erreur lors du traitement des données</string>
+</resources>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="@android:color/white" />
+    <stroke
+        android:width="2dp"
+        android:color="#E91E63" />
+    <corners android:radius="4dp" />
+</shape>
+
+    <!-- res/drawable/search_button_background.xml -->
+
+
+    <!-- res/drawable/weather_item_background.xml -->
+
+
+    <!-- res/drawable/ic_sunny.xml -->
+
+
+    <!-- res/drawable/ -->
+
+
+    <!-- res/drawable/ -->
+
+
+    <!-- res/drawable/ -->
